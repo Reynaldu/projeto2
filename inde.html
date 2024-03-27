@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+      <h1>Reinaldo Abreu</h1>
+    </header>
+  <div class="container">
+      <div class="carrossel">
+
+          <input type="radio" name="radio_btn" id="radio1">
+             <input type="radio" name="radio_btn" id="radio2">
+               <input type="radio" name="radio_btn" id="radio3">
+
+                    <div onclick="openModal()" class="slide capa">
+                      <img src="imagnes/img1.jpeg" alt="imagem1">
+                    </div>
+
+                    <div onclick="openModal2()" class="slide two">
+                      <img src="imagnes/img2.jpeg" alt="imagem2">
+                    </div>
+
+                    <div onclick="openModal3()" class="slide three">
+                      <img src="imagnes/img3.jpeg" alt="imagem3">
+                    </div>
+
+                            <div class="auto">
+                              <div class="auto-btn1"></div>
+                               <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                           </div>
+
+      </div>
+
+      
+                          <div class="manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                          </div>
+ </div>
+
+          <!--INICIO DO MODAL -->
+
+          <div class="modal-conteiner" id="modal-conteiner">
+            <div class="modal" id="modal">
+              <button class="close" id="close">X</button>
+              <h1>GITHUB</h1>
+              <P>GITHUB é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo</P>
+            </div>
+          </div>
+
+          <div class="modal-conteiner2" id="modal-conteiner2">
+            <div class="modal2" id="modal2">
+              <button class="close" id="close">X</button>
+              <h1>INSTAGRAM</h1>
+              <P> INSTAGRAM é uma rede social online de compartilhamento de fotos e vídeos entre seus usuários, que permite aplicar filtros digitais e compartilhá-los em uma variedade de serviços de redes sociais, como Facebook, Twitter, Tumblr e Flickr.</P>
+            </div>
+          </div>
+
+          <div class="modal-conteiner3" id="modal-conteiner3">
+            <div class="modal3" id="modal3">
+              <button class="close" id="close">X</button>
+              <h1>FACEBOOK</h1>
+              <P>  FACEBOOK é uma mídia social e rede social virtual lançada em 4 de fevereiro de 2004, operado e de propriedade privada da Meta, Inc. Em 4 de outubro de 2012, o Facebook atingiu a marca de 1 bilhão de usuários ativos, sendo por isso a maior rede social virtual em todo o mundo. Em 27 de junho de 2017, o Facebook atingiu a marca de 2 bilhões de usuários ativos. O nome do serviço decorre do nome coloquial para o livro dado aos alunos no início do ano letivo por algumas administrações universitárias nos Estados Unidos para ajudar os alunos a conhecerem uns aos outros.</P>
+            </div>
+          </div>
+          
+          <!--FIM DO MODAL-->
+</body>
+
+</html>

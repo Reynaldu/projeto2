@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-width: 360px;
+
+}
+
+
+h1{
+  color: rgb(255, 254, 254);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  padding-top: 5vh;
+  margin-bottom: 50px;
+  text-shadow: 4px 4px 8px rgb(255, 176, 176);
+
+}
+
+
+p{
+      font-size: 20px;
+      font-weight: bolder;
+ }
+
+
+.container{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(114, 102, 102);
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  width: 390px;
+  min-width: 300px;
+  height: 450px;
+  box-shadow: 4px 4px 8px black;
+}
+
+.carrossel{ 
+  display: flex;
+  height: 480px;
+  width: 400%;
+
+}
+
+.carrossel input{
+  display: none;
+}
+
+
+.slide{
+  width: 25%;
+  position: absolute;
+  cursor: pointer;
+ 
+}
+
+.slide img{
+  position: relative;
+  top: 90px;
+  left: 40px;
+  width: 200px;
+  min-width: 320px;
+  height: 270px;
+  border-radius: 15px;
+}
+
+.manual{
+  position: absolute;
+  width: 400px;
+  margin-top: 495px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 20px;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .capa{
+  z-index: 1;
+}
+#radio2:checked ~ .two{
+  z-index: 2;
+}
+#radio3:checked ~ .three{
+  z-index: 3;
+}
+
+.auto div{
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.auto{
+  position: absolute;
+  width: 400px;
+  margin-top: 495px;
+  display: flex;
+  justify-content: center;
+}
+
+.auto div:not(:last-child){
+  margin-right: 20px;
+}
+
+#radio1:checked ~ .auto .auto-btn1{
+  background-color: gray;
+}
+#radio2:checked ~ .auto .auto-btn2{
+  background-color: gray;
+}
+#radio3:checked ~ .auto .auto-btn3{
+  background-color: gray;
+}
+
+.modal-conteiner{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-conteiner2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-conteiner3{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal{
+  background-color: rgba(226, 226, 226, 0.867);
+  width: 60%;
+  min-width: 350px;
+  min-height: 200px;
+  padding:50px ;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal2{
+  background-color: rgba(226, 226, 226, 0.867);
+  width: 60%;
+  min-width: 350px;
+  min-height: 200px;
+  padding:50px ;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal3{
+  background-color: rgba(226, 226, 226, 0.867);
+  width: 60%;
+  min-width: 350px;
+  min-height: 200px;
+  padding:50px ;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.close{
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  color: antiquewhite;
+  font-weight: 900;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-conteiner.open{
+  display: flex;
+}
+
+.modal-conteiner2.open{
+  display: flex;
+}
+
+.modal-conteiner3.open{
+  display: flex;
+}
